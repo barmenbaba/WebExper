@@ -1,6 +1,15 @@
 <?php
 @session_start();
 
+//
+
+/*
+yeni kodlar ekledim kafama gore de onadım,i,
+
+*/
+///
+
+
 $vthost			="94.73.147.106";
 $vtveritabani		="eksper";
 $vtkullanici		="userB2CE27";
