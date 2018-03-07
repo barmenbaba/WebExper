@@ -1,0 +1,52 @@
+
+
+Options +FollowSymLinks
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteEngine On
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^karnaval kontrol_pers.php [NC]
+RewriteRule ^karnavall kontrol_admin.php [NC]
+RewriteRule ^siteci- index.php? [NC] 
+ 
+RewriteRule ^anasayfa sayfa.php?anasayfa [NC,L]
+RewriteRule ^raporlar sayfa.php?raporlar [NC,L]
+RewriteRule ^talepler sayfa.php?talepler [NC,L]
+RewriteRule ^cikis islemler/diger.php?cikis [NC,L]
+RewriteRule ^personeller sayfa.php?personel_alanlari [NC,L]
+RewriteRule ^talep_ekle islemler.php?talep_ekle [NC,L]
+RewriteRule ^personel_ekle islemler.php?per_ekle [NC,L]
+RewriteRule ^personel_guncelle islemler.php?personel_guncel [NC,L]
+
+RewriteRule ^ihale deneme.php?ihale_kaporta_cek [NC,L]
+
+RewriteRule talepkle-(.*) islemler/diger.php?talep_ekle&tale=$1 [NC,L]
+
+RewriteRule personel_duzenle-(.*) sayfa.php?personel_duzenle&p_id=$1 [NC,L]
+
+ 
+RewriteRule a5sg6Jkd-(.*) ses_yap.php?Ue53IX0v20hG=$1 [NC,L]
+
+
+ 
+RewriteRule yazdir-(.*) yazdir.php?yazdir_full&sdf2ew4er5wer=$1 [NC,L]
+RewriteRule ^yazdir_musteri-(.*) yazdir.php?yazdir_musteri&sdf2ew4er5wer=$1 [NC,L]
+RewriteRule ^yazdir_kaporta-(.*) yazdir.php?yazdir_kaporta&sdf2ew4er5wer=$1 [NC,L]
+RewriteRule ^yazdir_mekanik-(.*) yazdir.php?yazdir_mekanik&sdf2ew4er5wer=$1 [NC,L]
+RewriteRule ^yazdir_alt_takim-(.*) yazdir.php?yazdir_alttakim&sdf2ew4er5wer=$1 [NC,L]
+RewriteRule ^yazdir_performans-(.*) yazdir.php?yazdir_performans&sdf2ew4er5wer=$1 [NC,L]
+RewriteRule ^yazdir_elektronik-(.*) yazdir.php?yazdir_elektronik&sdf2ew4er5wer=$1 [NC,L]
+
+RewriteRule sa8Di4P-(.*.)-a5sg6Jkd-(.*.)-dSs3d7wf-(.*.)-Rs5d8As7g-(.*.) mesaj?d8A30c=$1&df4Ds5mg8Vds=$2&e23a0bff1e90=$3&feS203bf1e903a=$4 [L,QSA]
+
+
+ 
+RewriteCond $1 !^(css|js|images|yonetim|urun_resim)
+
+ErrorDocument 404 /bulunamadi.html
+<ifmodule mod_expires.c>
+<filesmatch "\.(jpg|gif|png|css|js)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 year"
+</filesmatch>
+</ifmodule> 
+   
